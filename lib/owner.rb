@@ -29,6 +29,10 @@ class Owner
     Dog.new(dog_name, self)
   end
   
+  def walk_dogs
+    dogs.map!{|x| x.mood = "happy"}
+  end
+  
   def self.all 
     @@all 
   end
