@@ -1,5 +1,5 @@
 class Cat
-  attr_accessor :owner, :mood
+  attr_accessor :mood
   attr_reader :name
   
   @@all = []
@@ -15,7 +15,13 @@ class Cat
     @@all
   end
   
+  def owner=(owner_obj)
+    @owner = owner_obj
+  end
   
+  def owner
+    @owner
+  end
   
   
   
