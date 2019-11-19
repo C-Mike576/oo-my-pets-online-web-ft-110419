@@ -15,7 +15,13 @@ class Dog
     @@all
   end
   
+  def owner=(owner_obj)
+    @owner = owner_obj
+  end
   
+  def owner
+    @owner
+  end
   
   
 end
