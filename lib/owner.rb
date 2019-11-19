@@ -14,11 +14,11 @@ class Owner
   end
   
   def cats 
-    Cat.all.select {|x| x.owner == self}
+    Cat.all.select {|cat| cat.owner == self}
   end
   
   def dogs
-    Dog.all.select {|x| x.owner == self}
+    Dog.all.select {|dog| dog.owner == self}
   end
   
   def buy_cat(cat_name)
@@ -30,7 +30,11 @@ class Owner
   end
   
   def walk_dogs
-    dogs.map!{|x| x.mood = "happy"}
+    dogs.map!{|dog| dog.mood = "happy"}
+  end
+  
+  def feed_cats
+    cats.map!{|cat| cat.mood = "happy"}
   end
   
   def self.all 
