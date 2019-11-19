@@ -22,8 +22,7 @@ class Owner
   end
   
   def buy_cat(cat_name)
-    cat_money = Cat.all.find {|x| x.name == cat_name}
-    cat_money.owner = self
+    cat_money = Cat.all.find {|x| x.name == cat_name}.owner = self
   end
   
   def buy_dog(dog_name)
