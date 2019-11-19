@@ -15,9 +15,7 @@ class Cat
     @@all
   end
   
-  def owner=(owner_obj)
-    @owner = owner_obj
-  end
+  
   
   
   
