@@ -22,11 +22,11 @@ class Owner
   end
   
   def buy_cat(cat_name)
-    cat_money = Cat.all.find {|x| x.name == cat_name}.owner = self
+    Cat.new(cat_name, self)
   end
   
   def buy_dog(dog_name)
-    Dog.all.find {|x| x.name == dog_name}.owner = self
+    Dog.new(dog_name, self)
   end
   
   def self.all 
